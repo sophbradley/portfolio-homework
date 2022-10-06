@@ -84,6 +84,10 @@ h3 {
   flex-wrap: wrap;
 }
 
+.project-title {
+  text-align: left;
+}
+
 .project-paragraph {
   display: flex;
   flex-wrap: wrap;
@@ -107,4 +111,50 @@ h3 {
   border: 8px solid white;
   box-shadow: var(--box-shadow);
   margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-paragraphs {
+    padding: 20px;
+  }
+
+  .about-images {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .email-link {
+    font-size: 24px;
+  }
+
+  .homepage-images {
+    display: none;
+  }
+
+  .project-paragraph,
+  .project-title {
+    text-align: center;
+  }
+
+  .launch-project {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
 }
